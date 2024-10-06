@@ -6,9 +6,27 @@
 	let inputValue = '';
 	let hasConsented = false;
 	let errorMessage = '';
+	let isRTL = false;
 
 	function consentToTerms() {
 		hasConsented = true;
+	}
+
+	function detectRTL(text: string) {
+		const rtlChars = /[\u0591-\u07FF\u200F\u202B\u202E\uFB1D-\uFDFD\uFE70-\uFEFC]/;
+		const ltrChars =
+			/[A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02B8\u0300-\u0590\u0800-\u1FFF\u2C00-\uFB1C\uFDFE-\uFE6F\uFEFD-\uFFFF]/;
+
+		const rtlCount = (text.match(rtlChars) || []).length;
+		const ltrCount = (text.match(ltrChars) || []).length;
+
+		return rtlCount > ltrCount;
+	}
+
+	function handleInput(event: Event) {
+		const target = event.target as HTMLInputElement;
+		inputValue = target.value;
+		isRTL = detectRTL(inputValue);
 	}
 
 	async function generateImage() {
@@ -26,7 +44,7 @@
 			});
 
 			if (response.status === 400) {
-				errorMessage = 'You may have screwed up! Check the text you eneterd :D';
+				errorMessage = 'You may have screwed up! Check the text you entered :D';
 				return;
 			}
 
@@ -118,8 +136,12 @@
 							type="text"
 							bind:value={inputValue}
 							on:keydown={handleKeyDown}
+							on:input={handleInput}
 							disabled={isLoading}
 							class="flex-grow rounded-lg border-2 border-orange-400 bg-gray-800 p-3 text-sm text-orange-100 placeholder-orange-300/50 transition duration-200 ease-in-out focus:border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-300/50"
+							class:text-right={isRTL}
+							class:text-left={!isRTL}
+							dir={isRTL ? 'rtl' : 'ltr'}
 							placeholder="Describe your image here..."
 						/>
 						<button
