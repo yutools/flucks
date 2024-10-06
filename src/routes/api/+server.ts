@@ -1,5 +1,5 @@
-import { together } from '$lib/together';
 import { json } from '@sveltejs/kit';
+import {together} from '../../lib/together';
 
 export async function POST({ request, cookies }) {
 	const { prompt } = await request.json();

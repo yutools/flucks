@@ -22,7 +22,7 @@
 			const input = e.currentTarget;
 			lastPrompt = input.value;
 
-			const response = await fetch('/', {
+			const response = await fetch('/api', {
 				method: 'POST',
 				body: JSON.stringify({ prompt: lastPrompt }),
 				headers: {
