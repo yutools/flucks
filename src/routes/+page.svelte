@@ -26,7 +26,7 @@
 			});
 
 			if (response.status === 400) {
-				errorMessage = 'You are an idiot!';
+				errorMessage = 'You may have screwed up! Check the text you eneterd :D';
 				return;
 			}
 
@@ -118,6 +118,7 @@
 							type="text"
 							bind:value={inputValue}
 							on:keydown={handleKeyDown}
+							disabled={isLoading}
 							class="flex-grow rounded-lg border-2 border-orange-400 bg-gray-800 p-3 text-sm text-orange-100 placeholder-orange-300/50 transition duration-200 ease-in-out focus:border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-300/50"
 							placeholder="Describe your image here..."
 						/>
