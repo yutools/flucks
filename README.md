@@ -8,6 +8,18 @@
 
 Flucks is an innovative image generation tool that helps you explore the beauty of creation through technology. Transform your ideas into visual representations with the power of AI, guided by ethical principles.
 
+## ⚠️ User Responsibility and Liability
+
+By using Flucks, you explicitly agree to the following:
+
+1. You are solely responsible for any content you generate using this tool.
+2. Any moral or ethical transgressions resulting from the misuse of this tool are your responsibility alone.
+3. The creators and maintainers of Flucks bear no responsibility or liability for any inappropriate, illegal, or unethical content created by users.
+4. You acknowledge that protections have been put in place, and you have been warned about potential misuse.
+5. This tool is intended for positive and beneficial use only. Any other use is strictly prohibited.
+
+**By using Flucks, you absolve the creators of this tool from any ذمّة (moral or religious responsibility) related to your use of the service.**
+
 ## ✨ Features
 
 - 🖼️ Create high-quality 1440x1440 images
@@ -93,7 +105,7 @@ If you have ideas to improve Flucks and benefit more people, please share them! 
 
 ## 📜 License
 
-Flucks is MIT licensed, encouraging open sharing of knowledge and collaboration.
+Flucks is MIT licensed, encouraging open sharing of knowledge and collaboration. However, please note that the license explicitly disclaims all liability for any misuse or unintended consequences of using this software. See the LICENSE file for full details.
 
 ---
 
@@ -101,4 +113,4 @@ Developed with intention by the YU Tools Team
 
 Use Flucks responsibly to create beauty and spread beneficial knowledge. 🌟
 
-> It is on you if you misuse this project, YU Tools does not take any responsibility of misuse!
+> It is on you if you misuse this project. YU Tools does not take any responsibility for misuse!
