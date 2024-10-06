@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"posthog-js": "^1.166.1",
 		"together-ai": "0.6.0-alpha.4"
 	}
 }
