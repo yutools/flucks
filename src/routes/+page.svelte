@@ -120,8 +120,8 @@
 				<p class="text-xs sm:text-sm">AI-Powered Image Generation Tool</p>
 			</header>
 
-			<main class="flex flex-col items-center gap-6">
-				<div class="w-full space-y-6">
+			<main class="flex flex-col items-start gap-6 md:flex-row">
+				<div class="w-full space-y-6 md:w-1/2">
 					<div class="rounded-lg bg-gray-800/50 p-4 text-sm">
 						<h2 class="mb-2 font-semibold">How to use:</h2>
 						<ol class="list-inside list-decimal space-y-1 text-xs">
@@ -160,7 +160,7 @@
 					{/if}
 				</div>
 
-				<div class="w-full">
+				<div class="w-full md:w-1/2">
 					<div
 						class="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-lg border-2 border-orange-400/30 bg-gray-800 shadow-lg transition duration-300 ease-in-out hover:shadow-orange-400/30"
 					>
