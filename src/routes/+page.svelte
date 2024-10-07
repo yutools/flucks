@@ -102,7 +102,7 @@
 			</ol>
 			<p class="mb-6 text-sm font-bold sm:text-base">
 				By clicking "I Understand and Accept Full Responsibility", you absolve the creators of this
-				tool from any ذمّة (moral or religious responsibility) related to your use of the service.
+				tool from any moral or religious responsibility related to your use of the service.
 			</p>
 			<button
 				on:click={consentToTerms}

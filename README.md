@@ -18,7 +18,7 @@ By using Flucks, you explicitly agree to the following:
 4. You acknowledge that protections have been put in place, and you have been warned about potential misuse.
 5. This tool is intended for positive and beneficial use only. Any other use is strictly prohibited.
 
-**By using Flucks, you absolve the creators of this tool from any ذمّة (moral or religious responsibility) related to your use of the service.**
+**By using Flucks, you absolve the creators of this tool from any moral or religious responsibility related to your use of the service.**
 
 ## ✨ Features
 
